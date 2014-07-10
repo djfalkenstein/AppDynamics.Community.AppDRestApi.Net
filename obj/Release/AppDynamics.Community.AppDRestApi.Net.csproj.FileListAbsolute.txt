@@ -1,0 +1,7 @@
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\bin\Release\AppDynamics.Community.AppDRestApi.Net.dll
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\bin\Release\AppDynamics.Community.AppDRestApi.Net.pdb
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\bin\Release\Newtonsoft.Json.dll
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\bin\Release\Newtonsoft.Json.pdb
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\bin\Release\Newtonsoft.Json.xml
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\obj\Release\AppDynamics.Community.AppDRestApi.Net.dll
+C:\Users\david.falkenstein\Documents\Visual Studio 2012\Projects\AppDynamics.Community.AppDRestApi.Net\AppDynamics.Community.AppDRestApi.Net\obj\Release\AppDynamics.Community.AppDRestApi.Net.pdb

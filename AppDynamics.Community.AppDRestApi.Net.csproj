@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{683E6768-73A1-4C98-81F2-C18FC652101F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppDynamics.Community.AppDRestApi.Net</RootNamespace>
+    <AssemblyName>AppDynamics.Community.AppDRestApi.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\JSON.NET\Bin\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Web.Helpers\v4.0_2.0.0.0__31bf3856ad364e35\System.Web.Helpers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Event.cs" />
+    <Compile Include="Entities\Events.cs" />
+    <Compile Include="Entities\MetricData.cs" />
+    <Compile Include="Entities\Snapshot.cs" />
+    <Compile Include="Entities\Snapshots.cs" />
+    <Compile Include="ApiProperties.cs" />
+    <Compile Include="Entities\AffectedEntities.cs" />
+    <Compile Include="Entities\AffectedEntityDefinition.cs" />
+    <Compile Include="Entities\Application.cs" />
+    <Compile Include="Entities\Applications.cs" />
+    <Compile Include="Entities\AppNode.cs" />
+    <Compile Include="Entities\Backend.cs" />
+    <Compile Include="Entities\Backends.cs" />
+    <Compile Include="Entities\BusinessTransaction.cs" />
+    <Compile Include="Entities\BusinessTransactions.cs" />
+    <Compile Include="Entities\EntityDefinition.cs" />
+    <Compile Include="Entities\MetricEntry.cs" />
+    <Compile Include="Entities\MetricItem.cs" />
+    <Compile Include="Entities\MetricItems.cs" />
+    <Compile Include="Entities\MetricNameUtil.cs" />
+    <Compile Include="Entities\MetricValue.cs" />
+    <Compile Include="Entities\MetricValues.cs" />
+    <Compile Include="Entities\NameValue.cs" />
+    <Compile Include="Entities\Node.cs" />
+    <Compile Include="Entities\Nodes.cs" />
+    <Compile Include="Entities\OAPAppPerformance.cs" />
+    <Compile Include="Entities\OAPCustomerPerformance.cs" />
+    <Compile Include="Entities\OAPNodePerformance.cs" />
+    <Compile Include="Entities\OAPTierPerformance.cs" />
+    <Compile Include="Entities\PolicyViolation.cs" />
+    <Compile Include="Entities\PolicyViolations.cs" />
+    <Compile Include="Entities\Tier.cs" />
+    <Compile Include="Entities\Tiers.cs" />
+    <Compile Include="Entities\TriggeredEntityDefinition.cs" />
+    <Compile Include="Objects\AgentEnum.cs" />
+    <Compile Include="Objects\ApplicationPerformanceRange.cs" />
+    <Compile Include="Objects\ControllerBaseUrl.cs" />
+    <Compile Include="Entities\MetricDataArray.cs" />
+    <Compile Include="Objects\CustomerPerformanceRange.cs" />
+    <Compile Include="Objects\IPAddress.cs" />
+    <Compile Include="Objects\IPAddresses.cs" />
+    <Compile Include="Objects\NodePerformanceRange.cs" />
+    <Compile Include="Objects\TierPerformanceRange.cs" />
+    <Compile Include="Objects\TimeRange.cs" />
+    <Compile Include="Objects\TimeRangeHelper.cs" />
+    <Compile Include="Queries\AgentAvailabilityMetricQuery.cs" />
+    <Compile Include="Queries\ApplicationExportQuery.cs" />
+    <Compile Include="Queries\ApplicationQuery.cs" />
+    <Compile Include="Queries\BackendsQuery.cs" />
+    <Compile Include="Queries\BusinessTransactionQuery.cs" />
+    <Compile Include="Queries\EUMMetricQuery.cs" />
+    <Compile Include="Queries\EventsQuery.cs" />
+    <Compile Include="Queries\HardwareResourcesMetricQuery.cs" />
+    <Compile Include="Queries\JVMMetricQuery.cs" />
+    <Compile Include="Queries\MetricItemQuery.cs" />
+    <Compile Include="Queries\MetricQuery.cs" />
+    <Compile Include="Queries\NodeQuery.cs" />
+    <Compile Include="Queries\OverAllPerformanceMetricQuery.cs" />
+    <Compile Include="Queries\PolicyViolationQuery.cs" />
+    <Compile Include="Queries\QueryEncoder.cs" />
+    <Compile Include="Queries\RESTExecuter.cs" />
+    <Compile Include="Queries\SnapshotQuery.cs" />
+    <Compile Include="Queries\TierQuery.cs" />
+    <Compile Include="Resources\Dictionary.cs" />
+    <Compile Include="RestAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objects\RestAuth.cs" />
+    <Compile Include="Util\GetTimeStamps.cs" />
+    <Compile Include="Util\JsonHandling.cs" />
+    <Compile Include="Util\StringNumConv.cs" />
+    <Compile Include="Util\Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
